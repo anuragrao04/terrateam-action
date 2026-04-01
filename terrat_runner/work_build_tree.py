@@ -68,7 +68,6 @@ def run(state):
 
         try:
             env = {'TERRATEAM_BASE_REF': state.work_manifest['base_ref']}
-            env.update(state.env)
             (proc, stdout, stderr) = cmd.run_with_output(
                 state,
                 {
