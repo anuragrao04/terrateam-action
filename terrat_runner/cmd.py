@@ -7,10 +7,6 @@ import subprocess
 import sys
 
 
-class MissingEnvVar(Exception):
-    pass
-
-
 def _strip_ansi(s):
     return re.sub(r'\033\[(\d|;)+?m', '', s)
 
